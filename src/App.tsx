@@ -17,7 +17,19 @@ function App() {
         auto-rotate
         style={{ width: '100%', height: '600px' }}
       >
-        <button slot="ar-button">
+        <button
+          slot="ar-button"
+          style={{
+            display: 'block',
+            padding: '12px 20px',
+            background: '#000',
+            color: '#fff',
+            border: 'none',
+            borderRadius: '8px',
+            cursor: 'pointer',
+            margin: '20px auto',
+          }}
+        >
           View In Your Space
         </button>
       </ModelViewer>
