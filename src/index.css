@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  
+  --color-primary-gold: #D4AF37;
+  --color-gold-hover: #C5A880;
+  
+  /* Luxury Dark / Wood palette */
+  --color-luxury-dark: #120B06;
+  --color-luxury-walnut: #1E150F;
+  --color-luxury-chocolate: #2B1E16;
+  
+  /* Luxury Light / Cream palette */
+  --color-luxury-cream: #FAF7F2;
+  --color-luxury-parchment: #F2EDE2;
+  --color-luxury-beige: #E6DFD3;
+  --color-luxury-tan: #D4C5B3;
+}
+
+/* Additional global stylings */
+html, body {
+  background-color: #FAF7F2; /* luxury-cream */
+  color: #120B06; /* luxury-dark */
+  font-family: "Inter", system-ui, sans-serif;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Luxury visual accents */
+.font-luxury-serif {
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #D4AF37 0%, #F3E5AB 50%, #AA7C11 100%);
+}
+
+.dark-gradient {
+  background: linear-gradient(135deg, #120B06 0%, #1E150F 50%, #2B1E16 100%);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F2EDE2;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4C5B3;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
+
+/* Custom styles for grid overlay, visual premium cards */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+.dark-glass-panel {
+  background: rgba(30, 21, 15, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
