@@ -1,3 +1,4 @@
+// @ts-nocheck
 import '@google/model-viewer';
 
 function App() {

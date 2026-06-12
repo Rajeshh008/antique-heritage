@@ -3,3 +3,5 @@ declare namespace JSX {
     'model-viewer': any;
   }
 }
+
+export {};
